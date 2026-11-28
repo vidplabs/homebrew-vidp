@@ -5,10 +5,16 @@ cask "vidp" do
   sha256 "11e5940ad83ab783ec9b3b312c1ffdf662b01cfc992d1b9014e6125d592a64b0"
 
   url "https://github.com/vidplabs/vidp/releases/download/v#{version}/vidp.app.zip"
-  name "vidp"
+  name "Vidp"
   desc "Minimal keyboard-driven video player built on libmpv"
-  homepage "https://github.com/vidplabs/vidp"
+  homepage "https://vidplabs.github.io/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
+  depends_on arch: :arm64
   depends_on macos: :tahoe
 
   app "vidp.app"
