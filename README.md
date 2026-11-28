@@ -85,3 +85,9 @@ those three together, or `brew upgrade` fails with "No available formula".
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## License
+
+This tap's cask and support files are licensed under the [BSD 2-Clause
+License](LICENSE). Vidp itself has separate license notices in the app
+repository and in each release.
